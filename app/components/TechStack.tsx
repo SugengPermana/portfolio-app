@@ -31,9 +31,9 @@ export function TechStack() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="bg-card border border-border rounded-2xl p-8 flex flex-col items-center justify-center gap-4 hover:shadow-lg transition-shadow"
+                  className="border text-foreground border border-border hover:border-foreground hover:shadow-md rounded-2xl p-8 flex flex-col items-center justify-center gap-4 transition-shadow"
                 >
-                  <item.icon className={`w-10 h-10 ${item.color}`} strokeWidth={1.5} />
+                  <item.icon className={`w-10 h-10 ${item.color || ''}`} strokeWidth={1.5} />
                   <span className="font-medium text-sm md:text-base text-foreground/80">{item.name}</span>
                 </motion.div>
               ))}

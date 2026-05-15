@@ -6,10 +6,10 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4 md:px-0">
         <div className="flex flex-col items-center text-center mb-16">
           <a href="#home" className="text-4xl font-mono tracking-tight font-bold mb-4">
-            Darrell.
+            Sugeng.
           </a>
           <p className="text-muted-foreground">
-            Building beautiful, performant web experiences.
+            Building Scalable Website, Intelligent, Efficient and Creative with Code.
           </p>
         </div>
 
@@ -26,22 +26,17 @@ export function Footer() {
 
           <ul className="flex items-center gap-4">
             <li>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
+              <a href="https://github.com/SugengPermana" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
                 <FaGithub className="w-4 h-4" />
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
+              <a href="https://www.linkedin.com/in/sugengpermanadesembry/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
                 <FaLinkedin className="w-4 h-4" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
-                <FaTwitter className="w-4 h-4" />
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
+              <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
                 <FaInstagram className="w-4 h-4" />
               </a>
             </li>
@@ -50,7 +45,7 @@ export function Footer() {
 
         <div className="text-center">
           <p className="text-xs text-muted-foreground tracking-wide">
-            &copy; {new Date().getFullYear()} Darrell Rafa Alamsyah. Crafted with ♥ using React.
+            &copy; {new Date().getFullYear()} Sugeng Permana Desembry. Crafted with ♥ using React.
           </p>
         </div>
       </div>

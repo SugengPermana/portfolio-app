@@ -8,9 +8,9 @@ import { certificatesData } from "../data/data";
 
 export function Certificates() {
   const [showAll, setShowAll] = useState(false);
-  
-  const displayedCertificates = showAll 
-    ? certificatesData 
+
+  const displayedCertificates = showAll
+    ? certificatesData
     : certificatesData.slice(0, 6);
 
   return (
@@ -34,7 +34,7 @@ export function Certificates() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-card border border-border rounded-3xl p-8 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group"
+              className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 group"
             >
               <div>
                 <Award className="w-8 h-8 mb-6 text-foreground" strokeWidth={1.5} />
@@ -47,7 +47,7 @@ export function Certificates() {
                   </p>
                 )}
               </div>
-              <a 
+              <a
                 href={cert.link}
                 target="_blank"
                 rel="noreferrer"
@@ -63,7 +63,7 @@ export function Certificates() {
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card hover:bg-muted transition-colors font-medium text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-foreground border border-border hover:border-foreground hover:shadow-md transition-colors font-medium text-sm"
             >
               {showAll ? (
                 <>

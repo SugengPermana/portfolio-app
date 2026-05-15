@@ -48,8 +48,7 @@ export function Navbar() {
         <div className="container mx-auto px-6 md:px-12 xl:px-24 flex items-center justify-between relative">
           <a href="#home" className="text-xl font-semibold tracking-tighter uppercase z-50 relative group outline-none overflow-hidden h-8 flex items-center">
             <span className="flex flex-col transform transition-transform duration-300 group-hover:-translate-y-full">
-              <span>Darrell.</span>
-              <span className="text-muted-foreground">Darrell.</span>
+              <span className="text-muted-foreground">Sugeng.</span>
             </span>
           </a>
 

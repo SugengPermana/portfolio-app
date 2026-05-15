@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Briefcase, GraduationCap, Code2, User2 } from "lucide-react";
+import { Certificates } from "../components/Certificates";
 import { cn } from "../lib/utils";
 import { tabs, experienceData, educationData, skillsData } from "../data/data";
 
@@ -52,8 +53,8 @@ export function Resume() {
                 className="flex flex-col gap-6"
               >
                 {experienceData.map((item, i) => (
-                  <div key={i} className="relative bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                    <div className="absolute top-1/2 -left-[calc(1.5rem+41px)] w-4 h-4 rounded-full bg-foreground hidden md:block" />
+                  <div key={i} className="relative text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6 transition-shadow">
+                    <div className="absolute top-1/2 -left-10 -translate-x-[calc(50%+1px)] -translate-y-1/2 w-4 h-4 rounded-full bg-foreground hidden md:block" />
                     <div className="flex flex-col md:flex-row gap-2 md:items-center justify-between mb-4">
                       <h4 className="text-xl font-bold">{item.role}</h4>
                       <span className="inline-block px-3 py-1 bg-muted rounded-full text-xs font-medium text-muted-foreground whitespace-nowrap">
@@ -75,9 +76,10 @@ export function Resume() {
                 exit={{ opacity: 0, x: -20 }}
                 className="flex flex-col gap-6"
               >
-                 {educationData.map((item, i) => (
-                  <div key={i} className="relative bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                    <div className="absolute top-1/2 -left-[calc(1.5rem+41px)] w-4 h-4 rounded-full bg-foreground hidden md:block" />
+                {educationData.map((item, i) => (
+                  <div key={i} className="relative 
+                  text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6 transition-shadow">
+                    <div className="absolute top-1/2 -left-10 -translate-x-[calc(50%+1px)] -translate-y-1/2 w-4 h-4 rounded-full bg-foreground hidden md:block" />
                     <div className="flex flex-col md:flex-row gap-2 md:items-center justify-between mb-4">
                       <h4 className="text-xl font-bold">{item.role}</h4>
                       <span className="inline-block px-3 py-1 bg-muted rounded-full text-xs font-medium text-muted-foreground whitespace-nowrap">
@@ -106,7 +108,7 @@ export function Resume() {
                       <span className="font-medium text-muted-foreground">{skill.progress}%</span>
                     </div>
                     <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
-                      <motion.div 
+                      <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${skill.progress}%` }}
                         transition={{ duration: 1, delay: i * 0.1, ease: "easeOut" }}
@@ -127,27 +129,27 @@ export function Resume() {
                 className="flex flex-col gap-6"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Name</p>
-                    <p className="font-bold text-lg">Darrell Rafa Alamsyah</p>
+                    <p className="font-bold text-lg">Sugeng Permana Desembry</p>
                   </div>
-                  <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Nationality</p>
                     <p className="font-bold text-lg">Indonesian</p>
                   </div>
-                  <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Email</p>
-                    <p className="font-bold text-lg">darrell2645@gmail.com</p>
+                    <p className="font-bold text-lg">sugengpermanad@gmail.com</p>
                   </div>
-                  <div className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Location</p>
-                    <p className="font-bold text-lg">Jakarta, Indonesia</p>
+                    <p className="font-bold text-lg">Bogor, Indonesia</p>
                   </div>
-                  <div className="bg-card border border-border rounded-xl p-6 md:col-span-2">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6 md:col-span-2">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Languages</p>
                     <p className="font-bold text-lg">English, Indonesian</p>
                   </div>
-                  <div className="bg-card border border-border rounded-xl p-6 md:col-span-2">
+                  <div className="text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6 md:col-span-2">
                     <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Bio</p>
                     <p className="text-muted-foreground leading-relaxed">
                       I am a Full-Stack Developer driven by the challenge of turning complex problems into intuitive, user-centric solutions. With a strong foundation in modern web and mobile frameworks, I thrive at the intersection of clean architecture and creative design. Outside of the IDE, I stay sharp by contributing to open-source projects, experimenting with emerging tech, and finding fresh perspectives through outdoor adventures.
@@ -159,6 +161,7 @@ export function Resume() {
           </AnimatePresence>
         </div>
       </div>
+      <Certificates />
     </section>
   );
 }

@@ -1,14 +1,15 @@
 import Home from "./sections/Home";
 import Contact from "./sections/Contact";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-
+import { Resume } from "./sections/Resume";
+import { Services } from "./sections/Services";
+import { Work } from "./sections/Work";
 export default function App() {
   return (
     <main>
       <Home />
-      <About/>
-      <Projects/>
+      <Services />
+      <Resume/>
+      <Work/>
       <Contact />
     </main>
   );

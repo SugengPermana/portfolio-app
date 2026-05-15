@@ -31,7 +31,7 @@ export default function Contact() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-          
+
           {/* Left Column */}
           <div className="flex flex-col">
             <h4 className="text-3xl font-bold tracking-tight mb-4">Have a project in mind?</h4>
@@ -40,23 +40,23 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-6 p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-6 p-6 rounded-2xl text-foreground border border-border hover:border-foreground hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Email</span>
-                  <a href="mailto:darrell2645@gmail.com" className="font-semibold text-lg hover:text-muted-foreground transition-colors">darrell2645@gmail.com</a>
+                  <a href="mailto:sugengpermanad@gmail.com" className="font-semibold text-lg hover:text-muted-foreground transition-colors">sugengpermanad@gmail.com</a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-6 p-6 rounded-2xl text-foreground border border-border hover:border-foreground hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Location</span>
-                  <span className="font-semibold text-lg">Jakarta, Indonesia</span>
+                  <span className="font-semibold text-lg">Bogor, Indonesia</span>
                 </div>
               </div>
             </div>
@@ -70,67 +70,67 @@ export default function Contact() {
           {/* Right Column (Form) */}
           <div className="bg-muted/30 border border-border rounded-3xl p-8 lg:p-10 shadow-lg">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                 <div className="flex flex-col gap-2">
-                   <label htmlFor="name" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Full Name</label>
-                   <input 
-                     type="text" 
-                     id="name"
-                     required
-                     value={formState.name}
-                     onChange={e => setFormState({...formState, name: e.target.value})}
-                     placeholder="Asep Mekanik"
-                     className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
-                   />
-                 </div>
-                 <div className="flex flex-col gap-2">
-                   <label htmlFor="email" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Email Address</label>
-                   <input 
-                     type="email" 
-                     id="email"
-                     required
-                     value={formState.email}
-                     onChange={e => setFormState({...formState, email: e.target.value})}
-                     placeholder="asep@example.com"
-                     className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
-                   />
-                 </div>
-               </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="name" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    value={formState.name}
+                    onChange={e => setFormState({ ...formState, name: e.target.value })}
+                    placeholder="Asep Mekanik"
+                    className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
+                  />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="email" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    value={formState.email}
+                    onChange={e => setFormState({ ...formState, email: e.target.value })}
+                    placeholder="asep@example.com"
+                    className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
+                  />
+                </div>
+              </div>
 
-               <div className="flex flex-col gap-2">
-                 <label htmlFor="subject" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Subject</label>
-                 <input 
-                   type="text" 
-                   id="subject"
-                   required
-                   value={formState.subject}
-                   onChange={e => setFormState({...formState, subject: e.target.value})}
-                   placeholder="Project discussion"
-                   className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
-                 />
-               </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="subject" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  required
+                  value={formState.subject}
+                  onChange={e => setFormState({ ...formState, subject: e.target.value })}
+                  placeholder="Project discussion"
+                  className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50"
+                />
+              </div>
 
-               <div className="flex flex-col gap-2">
-                 <label htmlFor="message" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Message</label>
-                 <textarea 
-                   id="message"
-                   required
-                   rows={5}
-                   value={formState.message}
-                   onChange={e => setFormState({...formState, message: e.target.value})}
-                   placeholder="Tell me about your project..."
-                   className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50 resize-y"
-                 />
-               </div>
-               
-               <button 
-                 type="submit"
-                 disabled={isSubmitting}
-                 className="w-full mt-4 flex items-center justify-center gap-2 bg-foreground text-background px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-semibold disabled:opacity-50"
-               >
-                 <Send className="w-4 h-4" />
-                 {isSubmitting ? "Sending..." : "Send Message"} 
-               </button>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="message" className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Message</label>
+                <textarea
+                  id="message"
+                  required
+                  rows={5}
+                  value={formState.message}
+                  onChange={e => setFormState({ ...formState, message: e.target.value })}
+                  placeholder="Tell me about your project..."
+                  className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:border-foreground transition-colors placeholder:text-muted-foreground/50 resize-y"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full mt-4 flex items-center justify-center gap-2 bg-foreground text-background px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-semibold disabled:opacity-50"
+              >
+                <Send className="w-4 h-4" />
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
             </form>
           </div>
         </div>

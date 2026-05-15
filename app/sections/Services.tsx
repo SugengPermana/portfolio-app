@@ -1,3 +1,4 @@
+"use client"
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -35,10 +36,10 @@ export function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="group relative bg-card border border-border rounded-3xl p-10 flex flex-col justify-between hover:shadow-lg transition-shadow overflow-hidden"
+            className="group relative text-foreground border border-border hover:border-foreground hover:shadow-lg rounded-3xl p-10 flex flex-col justify-between transition-shadow overflow-hidden"
           >
             <div>
-              <span 
+              <span
                 className="text-6xl md:text-7xl font-bold font-mono tracking-tighter block mb-8 transition-colors text-transparent opacity-30 group-hover:opacity-60"
                 style={{ WebkitTextStroke: "2px currentColor", color: "var(--foreground)" }}
               >
