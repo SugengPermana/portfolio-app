@@ -94,6 +94,7 @@ export default function Home() {
                 <Image
                   src="/me.png"
                   alt="Profile"
+                  sizes="287px"
                   fill
                   className="object-cover"
                 />

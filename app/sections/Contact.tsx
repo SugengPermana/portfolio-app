@@ -1,20 +1,51 @@
 "use client"
+import emailjs from "@emailjs/browser";
 import { Send, Mail, MapPin } from "lucide-react";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: "", email: "", subject: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Fungsi untuk menangani pengiriman form
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      toast.success("Message sent successfully!", {
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+
+      setFormState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.log(error);
+      toast.error("Failed to send message", {
+        description: "Something went wrong. Please try again later.",
+      });
+    } finally {
       setIsSubmitting(false);
-      alert("Message sent successfully! (Simulated)");
-      setFormState({ name: "", email: "", subject: "", message: "" });
-    }, 1500);
+    }
   };
 
   return (
@@ -126,7 +157,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full mt-4 flex items-center justify-center gap-2 bg-foreground text-background px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-semibold disabled:opacity-50"
+                className="w-full mt-4 flex items-center justify-center gap-2 bg-foreground text-background px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-semibold disabled:opacity-50 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
                 {isSubmitting ? "Sending..." : "Send Message"}

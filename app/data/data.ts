@@ -207,7 +207,7 @@ export const experienceData = [
   },
   {
     role: "Tour Guide",
-    company: "Local Guide - Remote",
+    company: "Museum Fatahillah Jakarta",
     date: "Februari 2023 — April 2023",
     description: "Dalam masa magang saya berinteraksi langsung dengan wisatawan lokal dari berbagai rombongan sekolah serta wisatawan asing. Tugas saya mencakup memberikan informasi terkait ruangan dan koleksi museum, menjawab pertanyaan pengunjung, serta memastikan area museum tetap tertib, aman, dan terjaga dengan baik untuk mendukung pengalaman kunjungan yang nyaman."
   },
