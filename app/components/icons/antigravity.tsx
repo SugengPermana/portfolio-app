@@ -19,7 +19,7 @@ export const GravityIcon = ({
       rx="3"
       ry="2.2"
       fill="#FFE432"
-      opacity="0.9"
+      opacity="0"
     />
 
     {/* Red */}
@@ -29,7 +29,7 @@ export const GravityIcon = ({
       rx="3.5"
       ry="3"
       fill="#FC413D"
-      opacity="0.9"
+      opacity="0"
     />
 
     {/* Green */}
@@ -39,7 +39,7 @@ export const GravityIcon = ({
       rx="4"
       ry="3"
       fill="#00B95C"
-      opacity="0.9"
+      opacity="0"
     />
 
     {/* Blue */}
@@ -49,13 +49,13 @@ export const GravityIcon = ({
       rx="4"
       ry="3"
       fill="#3186FF"
-      opacity="0.9"
+      opacity="0"
     />
 
     {/* Main shape */}
     <path
       d="M14.0777 13.984C14.945 14.6345 16.2458 14.2008 15.0533 13.0084C11.476 9.53949 12.2349 0 7.79033 0C3.34579 0 4.10461 9.53949 0.527295 13.0084C-0.773543 14.3092 0.635692 14.6345 1.50293 13.984C4.86344 11.7076 4.64663 7.69664 7.79033 7.69664C10.934 7.69664 10.7172 11.7076 14.0777 13.984Z"
-      fill="white"
+      fill="currentColor"
     />
   </svg>
 );
