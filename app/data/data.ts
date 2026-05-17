@@ -27,7 +27,7 @@ export const workData = [
     description: "Bedakin adalah website marketplace online yang memungkinkan pengguna untuk menjual dan membeli produk berbasis layanan. jadi setiap produk dilengkapi dengan informasi detail, serta fitur komentar dan review yang memungkinkan pengguna berbagi pengalaman mereka. Fitur ini membantu membangun kepercayaan dan transparansi antara pembeli dan penjual. Platform ini dirancang dengan fokus pada kemudahan penggunaan, sehingga pengguna dapat menjelajahi layanan, memberikan feedback, dan berinteraksi dengan mudah di dalam sistem marketplace.",
     tech: ["Tailwind", "NextJs", "Typescript", "Express", "Neon DB"],
     githubUrl: "https://github.com/SugengPermana/Bedakin",
-    liveUrl: "https://github.com/SugengPermana/Bedakin",
+    liveUrl: "https://bedakin.vercel.app/",
     imageUrl: "/bedakin.webp" // placeholder
   },
   {
@@ -346,51 +346,3 @@ export const itemVariants = {
     transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
-
-export const allProjects = [
-  {
-    title: "Ecoomerce Storefront",
-    category: "Fullstack",
-    description: "A high-performance e-commerce storefront built with Next.js App Router and Shopify. Features dynamic routing, cart management, and seamless checkout.",
-    year: "2024",
-    link: "https://example.com",
-    github: "https://github.com",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Shopify"],
-  },
-  {
-    title: "FinTech Dashboard",
-    category: "Frontend UI",
-    description: "A comprehensive financial dashboard interface with real-time data visualization, dark mode support, and accessibility-first components.",
-    year: "2023",
-    link: "https://example.com",
-    github: "https://github.com",
-    tags: ["React", "Vite", "D3.js", "Framer Motion"],
-  },
-  {
-    title: "AI Writing Assistant",
-    category: "Web Application",
-    description: "An AI-powered writing tool that helps users generate and refine content. Integrates directly with OpenAI's API and features a custom rich text editor.",
-    year: "2023",
-    link: "https://example.com",
-    github: "https://github.com",
-    tags: ["Next.js", "OpenAI", "TipTap", "Clerk"],
-  },
-  {
-    title: "Creative Agency Portfolio",
-    category: "Web Design",
-    description: "A showcase website for a creative agency featuring WebGL experiences, smooth page transitions, and complex scroll animations.",
-    year: "2022",
-    link: "https://example.com",
-    github: "https://github.com",
-    tags: ["Three.js", "GSAP", "React", "Styled Components"],
-  },
-  {
-    title: "Real-time Chat Platform",
-    category: "Fullstack",
-    description: "A highly scalable chat application supporting channels, direct messages, and file sharing with a serverless architecture.",
-    year: "2022",
-    link: "https://example.com",
-    github: "https://github.com",
-    tags: ["React", "Firebase", "Node.js", "WebSockets"],
-  },
-];
