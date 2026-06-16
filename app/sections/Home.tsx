@@ -57,7 +57,7 @@ export default function Home() {
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 items-center">
               <a
-                href="/cv.pdf"
+                href="/CV_Sugeng_Permana_Desembry.pdf"
                 className="inline-flex items-center gap-2 border border-border bg-transparent text-foreground px-6 py-3.5 rounded-full hover:border-foreground transition-colors font-medium text-sm"
               >
                 <Download className="w-4 h-4" /> Download CV
