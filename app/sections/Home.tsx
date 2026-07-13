@@ -44,13 +44,13 @@ export default function Home() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex gap-4 items-center mb-10">
-              <a href="https://github.com/SugengPermana" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center  transition-colors">
+              <a href="https://github.com/SugengPermana" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center  transition-colors">
                 <FaGithub className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/sugengpermanadesembry/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
+              <a href="https://www.linkedin.com/in/sugengpermanadesembry/" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
                 <FaLinkedin className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
+              <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
                 <FaInstagram className="w-5 h-5" />
               </a>
             </motion.div>
@@ -77,7 +77,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex justify-center lg:justify-end relative"
           >
-            <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96">
               {/* Rotating dots around the image */}
               <div className="absolute -inset-4 md:-inset-6 flex items-center justify-center pointer-events-none">
                 <div className="w-full h-full rounded-full border border-dashed border-border animate-[spin_30s_linear_infinite] relative">
@@ -94,7 +94,7 @@ export default function Home() {
                 <Image
                   src="/me.png"
                   alt="Profile"
-                  sizes="287px"
+                  sizes="(max-width: 640px) 224px, (max-width: 768px) 288px, 384px"
                   fill
                   className="object-cover"
                 />
