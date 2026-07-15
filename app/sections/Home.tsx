@@ -25,7 +25,7 @@ export default function Home() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-8"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8 break-words"
             >
               Hello, I'm <br />
               Sugeng Permana <br />
@@ -67,6 +67,12 @@ export default function Home() {
                 className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-3.5 rounded-full hover:scale-105 transition-transform duration-300 font-medium text-sm"
               >
                 Hire Me <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="/services/web-dev"
+                className="inline-flex items-center gap-2 border border-border bg-transparent text-foreground px-6 py-3.5 rounded-full hover:border-foreground transition-colors font-medium text-sm"
+              >
+                Lihat Paket & Harga <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
           </motion.div>

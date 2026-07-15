@@ -17,7 +17,7 @@ export function Work() {
   const activeProject = filteredWork[activeIndex] || filteredWork[0];
 
   return (
-    <section className="py-20 md:py-32" id="work">
+    <section className="py-20 md:py-32 overflow-hidden" id="work">
       <div className="text-center mb-16">
         <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">
           PORTFOLIO
@@ -49,7 +49,7 @@ export function Work() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 lg:px-0 flex flex-col md:flex-row gap-8 lg:gap-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col md:flex-row gap-8 lg:gap-16">
         {/* Left Column (List) */}
         <div className="flex-1 flex flex-col gap-4">
           {filteredWork.map((work, index) => {

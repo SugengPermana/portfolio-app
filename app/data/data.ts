@@ -186,6 +186,20 @@ export const certificatesData = [
     link: "https://www.dicoding.com/certificates/QLZ935J07Z5D",
   },
   {
+    title: "Engineer AI Agents with Agent Development Kit (ADK)",
+    issuer: "Google Skill Boost",
+    year: "2026",
+    credentialId: "25502783",
+    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25502783",
+  },
+  {
+    title: "Google Skills Arcade '26: Facilitator Guidelines",
+    issuer: "Google Skill Boost",
+    year: "2026",
+    credentialId: "25502771",
+    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25502771",
+  },
+  {
     title: "Machine Learning Operations (MLOps) For Generative AI",
     issuer: "Google Skill Boost",
     year: "2025",
