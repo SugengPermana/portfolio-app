@@ -149,6 +149,7 @@ export function Work() {
               {/* Carousel indicators */}
               <div className="flex items-center justify-center gap-4 mt-6">
                 <button
+                  name="Left"
                   onClick={() => setActiveIndex(prev => prev > 0 ? prev - 1 : filteredWork.length - 1)}
                   className="p-2 rounded-full border border-border hover:bg-muted transition-colors"
                 >
@@ -166,6 +167,7 @@ export function Work() {
                   ))}
                 </div>
                 <button
+                  name="Right"
                   onClick={() => setActiveIndex(prev => prev < filteredWork.length - 1 ? prev + 1 : 0)}
                   className="p-2 rounded-full border border-border hover:bg-muted transition-colors"
                 >

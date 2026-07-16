@@ -43,24 +43,24 @@ const processes = [
 
 export function WorkingProcess() {
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden bg-foreground" id="process">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-background" id="process">
       <div className="text-center mb-20 relative z-10">
         <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-indigo-100 dark:bg-[#1e1b4b] mb-6">
           <span className="text-xs font-bold tracking-widest uppercase text-indigo-600 dark:text-[#818cf8]">
             Workflow
           </span>
         </div>
-        <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-background">
+        <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground">
           My Working Process
         </h3>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Timeline Line (Desktop) */}
-        <div className="hidden md:block absolute left-[12.5%] right-[12.5%] top-[56px] h-[1px] bg-background/20 z-0" />
+        <div className="hidden md:block absolute left-[12.5%] right-[12.5%] top-[56px] h-px bg-foreground/20 z-0" />
 
         {/* Timeline Line (Mobile) */}
-        <div className="block md:hidden absolute left-[65px] top-[40px] bottom-[100px] w-[1px] bg-background/20 z-0" />
+        <div className="block md:hidden absolute left-[65px] top-[80px] bottom-[px] w-px bg-foreground/20 z-0" />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6">
           {processes.map((process, i) => (
@@ -85,8 +85,8 @@ export function WorkingProcess() {
 
               {/* Step Content */}
               <div className="pt-2 md:pt-0">
-                <h4 className="text-xl md:text-2xl font-bold mb-3 text-background">{process.title}</h4>
-                <p className="text-background/60 text-sm md:text-base font-light leading-relaxed max-w-[260px] mx-auto">
+                <h4 className="text-xl md:text-2xl font-bold mb-3 text-foreground">{process.title}</h4>
+                <p className="text-foreground/60 text-sm md:text-base font-light leading-relaxed max-w-[260px] mx-auto">
                   {process.description}
                 </p>
               </div>

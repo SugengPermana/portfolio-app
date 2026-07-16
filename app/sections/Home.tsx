@@ -44,13 +44,13 @@ export default function Home() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex gap-4 items-center mb-10">
-              <a href="https://github.com/SugengPermana" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center  transition-colors">
+              <a href="https://github.com/SugengPermana" target="_blank" rel="noopener" aria-label="GitHub Sugeng Permana Desembry" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center  transition-colors">
                 <FaGithub className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/sugengpermanadesembry/" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
+              <a href="https://www.linkedin.com/in/sugengpermanadesembry/" target="_blank" rel="noopener" aria-label="LinkedIn Sugeng Permana Desembry" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
                 <FaLinkedin className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noopener" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
+              <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noopener" aria-label="Instagram Sugeng Permana Desembry" className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors">
                 <FaInstagram className="w-5 h-5" />
               </a>
             </motion.div>

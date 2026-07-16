@@ -43,17 +43,17 @@ const servicesData = {
       },
       {
         name: "Website Dashboard",
-        subtitle: "ALL SYSTEM",
+        subtitle: "ALL System",
         originalPrice: "Rp 4.100.77",
         price: "Rp 1.999.999",
         delivery: "Selesai 6 - 7 hari kerja",
         promo: "Hemat 68%",
         isPopular: false,
         features: [
-          "Responsive Design",
           "1 email bisnis",
           "Web 5 halaman",
           "Revisi 1x",
+          "SEO Dasar",
         ]
       }
     ],
@@ -69,8 +69,8 @@ const servicesData = {
     },
     guarantees: [
       { icon: "shield", title: "Garansi Anti-Hack & Uptime", desc: "Dijaga penuh selama 1 tahun." },
-      { icon: "clock", title: "Selesai Tepat Waktu", desc: "3-7 hari kerja, sesuai paket." },
-      { icon: "users", title: "Didampingi Tim In-House", desc: "Bukan dialihkan ke pihak ketiga." }
+      { icon: "clock", title: "Selesai Tepat Waktu", desc: "menyesuaikan paket." },
+      { icon: "users", title: "Konsultasi Free", desc: "bisa konsultasi gratis sesuai kebutuhan kamu" }
     ],
     faqs: [
       {
@@ -123,23 +123,23 @@ const servicesData = {
         delivery: "Selesai 14 hari kerja",
         promo: "Hemat 40%",
         isPopular: false,
-        features: ["Component States", "Clean & Modern UI", "Revisi 1x", "UML"]
+        features: ["Component States", "Clean & Modern UI", "Revisi 1x"]
       }
     ],
     painPoints: {
       title: "Desain asal-asalan bikin produk terlihat murahan?",
-      subtitle: "Kalau salah satu ini kamu rasakan, saatnya upgrade UI/UX kamu sebelum user kabur.",
+      subtitle: "Kalau salah satu ini kamu rasakan, saatnya pake jasa kami",
       items: [
         "Tampilan app / website terlihat kuno dan tidak konsisten.",
-        "User bingung navigasinya — bounce rate tinggi, konversi rendah.",
-        "Desain dibuat developer tanpa riset UX — hasilnya asal jadi.",
-        "Tidak punya design system — setiap halaman baru jadi eksperimen."
+        "User bingung navigasinya bounce rate tinggi, konversi rendah.",
+        "Desain dibuat developer tanpa riset UX hasilnya asal jadi.",
+        "Tidak punya design system setiap halaman baru jadi eksperimen."
       ]
     },
     guarantees: [
       { icon: "palette", title: "Desain Modern & Konsisten", desc: "Mengikuti tren UI terkini dengan design system." },
-      { icon: "clock", title: "Selesai Tepat Waktu", desc: "4-14 hari kerja, sesuai paket." },
-      { icon: "eye", title: "Riset & User-Centered", desc: "Desain berbasis data dan kebutuhan user." }
+      { icon: "clock", title: "Selesai Tepat Waktu", desc: "Menyesuaikan Paket" },
+      { icon: "eye", title: "Riset & User-Centered", desc: "Desain berbasis data dan sesuai kebutuhan user." }
     ],
     faqs: [
       {
