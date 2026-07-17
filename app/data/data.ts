@@ -1,24 +1,11 @@
+// on
 import {
   Briefcase,
   GraduationCap,
   Code2,
   User2,
-  Atom,
-  Code,
-  Triangle,
-  Wind,
-  Box,
-  FileCode2,
-  Server,
-  Layers,
-  Database,
-  Leaf,
-  Cloud,
-  GitBranch,
-  Container,
-  Terminal,
 } from "lucide-react";
-import { FaFigma } from "react-icons/fa";
+// Icon (on)
 import { ReactIcon } from "../components/icons";
 import { NextJsIcon } from "../components/icons/nextjs";
 import { TypeIcon } from "../components/icons/typescript";
@@ -35,8 +22,10 @@ import { VscodeIcon } from "../components/icons/vscode";
 import { GitIcon } from "../components/icons/git";
 import { GravityIcon } from "../components/icons/antigravity";
 
-export const categories = ["All", "Web App", "Design", "System Manajemen"];
+// Categori (on)
+export const categories = ["All", "Web App", "Design", "System Dashboard"];
 
+// Work (on)
 export const workData = [
   {
     num: "01",
@@ -74,7 +63,7 @@ export const workData = [
   {
     num: "04",
     title: "Task Manajemen",
-    categories: ["Web App", "System Manajemen"],
+    categories: ["Web App", "System Dashboard"],
     description:
       "Task Manajemen adalah sebuah sistem manajemen tugas yang memungkinkan pengguna untuk membuat dan mengelola tugas secara efisien. mirip aplikasi to do list, Pengguna dapat menambahkan tugas, memantau progres, memberi notifikasi dan mengatur pekerjaan mereka dalam satu platform terpusat. Sistem ini dirancang untuk membantu meningkatkan produktivitas dengan antarmuka yang sederhana, intuitif, dan mudah digunakan.",
     tech: ["HTML", "CSS", "Javascript", "Node.js"],
@@ -126,8 +115,31 @@ export const workData = [
     liveUrl: "#",
     imageUrl: "/shoes.webp",
   },
+  {
+    num: "09",
+    title: "Fruit Cashier Dashboard UI Design",
+    categories: ["Design"],
+    description:
+      "This project is a Point of Sale (POS) dashboard designed specifically for a fruit store. The interface focuses on providing a fast and intuitive purchasing experience by organizing products into categories, displaying promotional discounts, and enabling quantity adjustments directly from each product card. A dedicated payment panel featuring QRIS integration allows cashiers to review selected items, monitor the total purchase amount, and complete transactions efficiently. The design emphasizes clean visual hierarchy, accessibility, and a fresh color palette that reflects the healthy and natural identity of the business.",
+    tech: ["Figma"],
+    githubUrl: "#",
+    liveUrl: "#",
+    imageUrl: "/Sayur.webp",
+  },
+  {
+    num: "10",
+    title: "Warung Madura Dashboard UI Design",
+    categories: ["Design"],
+    description:
+      "This dashboard was created as a user interface concept for a convenience store cashier system. The layout prioritizes speed and operational efficiency by providing quick product search, one-click item selection, real-time shopping cart updates, and QRIS payment support within a single workspace. The minimalist design reduces visual clutter while maintaining clear information architecture, making it easier for cashiers to process transactions with minimal interaction. The project demonstrates the application of modern UI principles, consistency, and usability for retail management systems..",
+    tech: ["Figma"],
+    githubUrl: "#",
+    liveUrl: "#",
+    imageUrl: "/Warung.webp",
+  },
 ];
 
+// Certificate (on)
 export const certificatesData = [
   {
     title: "Belajar Dasar AI",
@@ -193,6 +205,13 @@ export const certificatesData = [
     link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25502783",
   },
   {
+    title: "Create ML Models With BigQuery ML",
+    issuer: "Google Skill Boost",
+    year: "2026",
+    credentialId: "25611508",
+    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25611508",
+  },
+  {
     title: "Google Skills Arcade '26: Facilitator Guidelines",
     issuer: "Google Skill Boost",
     year: "2026",
@@ -243,6 +262,7 @@ export const certificatesData = [
   },
 ];
 
+// navbar left (on)
 export const tabs = [
   { id: "experience", label: "Experience", icon: Briefcase },
   { id: "education", label: "Education", icon: GraduationCap },
@@ -250,13 +270,14 @@ export const tabs = [
   { id: "about", label: "About Me", icon: User2 },
 ];
 
+// Experience (on)
 export const experienceData = [
   {
     role: "Web Developer",
     company: "Freelancer - Remote",
     date: "2025 — Present",
     description:
-      "Saya aktif sebagai freelance web developer di berbagai platform seperti facebook, Group Whastapp, telegram, dan instagram, menawarkan jasa pembuatan website untuk user dan membantu mereka dengan kebutuhan web development, jasa website yang saya jual seperti personal websites, company profile, landing pages, manajemen system, and e-commerce websites ",
+      "Saya aktif sebagai freelance web developer di berbagai platform seperti facebook, Group Whastapp, telegram, dan instagram, menawarkan jasa pembuatan website untuk user dan membantu mereka dengan kebutuhan web development, jasa website yang saya jual seperti personal websites, company profile, landing pages, System Dashboard, and e-commerce websites ",
   },
   {
     role: "Tour Guide",
@@ -267,6 +288,7 @@ export const experienceData = [
   },
 ];
 
+// Education (on)
 export const educationData = [
   {
     role: "Computer Science",
@@ -282,16 +304,18 @@ export const educationData = [
   },
 ];
 
+// Skills (on)
 export const skillsData = [
-  { name: "Backend Development", progress: 70 },
+  { name: "Backend Development", progress: 80 },
   { name: "Frontend Development", progress: 95 },
   { name: "AI / Machine Learning", progress: 40 },
   { name: "Software Development", progress: 60 },
-  { name: "Python", progress: 60 },
-  { name: "Hardware Maintenance", progress: 50 },
-  { name: "Prompt Engineering", progress: 75 },
+  { name: "Python", progress: 40 },
+  { name: "Hardware Maintenance", progress: 40 },
+  { name: "Prompt Engineering", progress: 85 },
 ];
 
+// Tech Stack (on)
 export const stack = [
   {
     title: "FRONTEND",
@@ -334,68 +358,6 @@ export const stack = [
   },
 ];
 
-export const experience = [
-  {
-    role: "Senior Frontend Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
-    description:
-      "Leading the frontend team in building scalable enterprise web applications. Improved rendering performance by 40% and established a comprehensive design system.",
-  },
-  {
-    role: "Fullstack Developer",
-    company: "Creative Digital Agency",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained interactive web experiences for global brands. Collaborated closely with designers to ensure pixel-perfect and accessible implementations.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Startup Co.",
-    period: "2018 - 2020",
-    description:
-      "Built the initial MVP of the company's core product. Implemented responsive designs and integrated with various third-party APIs.",
-  },
-];
-
-export const skills = [
-  "TypeScript",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Tailwind CSS",
-  "Framer Motion",
-  "GraphQL",
-  "REST APIs",
-  "Git",
-  "Supabase",
-  "Firebase",
-  "PostgreSQL",
-  "Figma",
-];
-
-export const selectedProjects = [
-  {
-    title: "E-Commerce Platform",
-    category: "Fullstack Development",
-    year: "2023",
-    slug: "ecommerce",
-  },
-  {
-    title: "Financial Dashboard",
-    category: "Frontend & UI/UX",
-    year: "2023",
-    slug: "dashboard",
-  },
-  {
-    title: "Social Networking App",
-    category: "Mobile & Backend",
-    year: "2024",
-    slug: "social",
-  },
-];
-
 export const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -411,6 +373,34 @@ export const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
+    transition: { duration: 1.5, ease: [0.44, 1, 0.27, 1] as const },
   },
 };
+
+export const LeftItemVariants = {
+  hidden: {
+    opacity: 0,
+    x: -70,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
+export const RightItemVariants = {
+  hidden: {
+    opacity: 0,
+    x: 140,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    },
+  }
+}

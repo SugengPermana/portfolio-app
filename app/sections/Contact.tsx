@@ -92,7 +92,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-12 flex items-center gap-4 hidden lg:flex">
+            <div className="mt-12 items-center gap-4 hidden lg:flex">
               <div className="h-px bg-border flex-1" />
               <span className="text-xs font-mono text-muted-foreground">Ready to start?</span>
             </div>

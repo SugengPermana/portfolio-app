@@ -17,7 +17,7 @@ export function Work() {
   const activeProject = filteredWork[activeIndex] || filteredWork[0];
 
   return (
-    <section className="py-20 md:py-32 overflow-hidden" id="work">
+    <section className="py-20 md:py-32" id="work">
       <div className="text-center mb-16">
         <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">
           PORTFOLIO
@@ -51,9 +51,10 @@ export function Work() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col md:flex-row gap-8 lg:gap-16">
         {/* Left Column (List) */}
-        <div className="flex-1 flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4 min-w-0">
           {filteredWork.map((work, index) => {
             const isActive = index === activeIndex;
+            const isDesign = work.categories.includes("Design");
             return (
               <div
                 key={work.num}
@@ -94,18 +95,35 @@ export function Work() {
                       ))}
                     </div>
                     <div className="flex gap-4 pt-4 mt-auto">
-                      <a
-                        href={work.githubUrl}
-                        className="flex items-center gap-2 px-6 py-3 rounded-full text-foreground border border-border hover:border-foreground hover:shadow-xl font-medium transition-colors text-sm"
-                      >
-                        <FaGithub className="w-4 h-4" /> GitHub
-                      </a>
-                      <a
-                        href={work.liveUrl}
-                        className="flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background font-medium hover:opacity-90 transition-opacity text-sm"
-                      >
-                        <ExternalLink className="w-4 h-4" /> Live Demo
-                      </a>
+                      {isDesign ? (
+                        <a
+                          href={work.liveUrl !== "#" ? work.liveUrl : work.imageUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background font-medium hover:opacity-90 transition-opacity text-sm"
+                        >
+                          <ExternalLink className="w-4 h-4" /> View
+                        </a>
+                      ) : (
+                        <>
+                          <a
+                            href={work.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-6 py-3 rounded-full text-foreground border border-border hover:border-foreground hover:shadow-xl font-medium transition-colors text-sm"
+                          >
+                            <FaGithub className="w-4 h-4" /> GitHub
+                          </a>
+                          <a
+                            href={work.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background font-medium hover:opacity-90 transition-opacity text-sm"
+                          >
+                            <ExternalLink className="w-4 h-4" /> Live Demo
+                          </a>
+                        </>
+                      )}
                     </div>
                   </motion.div>
                 )}
@@ -114,9 +132,9 @@ export function Work() {
           })}
         </div>
 
-        {/* Right Column (Sticky Image) */}
-        <div className="flex-1 relative hidden md:block">
-          <div className="sticky top-32 w-full">
+        {/* Right Column — sticky while scrolling the left list (desktop) */}
+        <div className="flex-1 relative hidden md:block min-w-0">
+          <div className="md:sticky md:top-28 z-10">
             <div className="bg-card border border-border rounded-3xl p-2 pb-6 shadow-2xl overflow-hidden">
               {/* Browser Window Mockup */}
               <div className="flex items-center gap-2 px-4 py-3 border-b border-border mb-2 bg-muted/30">
@@ -131,7 +149,7 @@ export function Work() {
               </div>
 
               {/* Image Container */}
-              <div className="aspect-[4/3] w-full overflow-hidden px-2">
+              <div className="aspect-4/3 w-full overflow-hidden px-2">
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={activeProject?.num}

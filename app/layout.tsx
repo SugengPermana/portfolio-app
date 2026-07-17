@@ -32,7 +32,7 @@ export default function RootLayout({
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
+      <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Navbar />
           <Toaster richColors position="top-right" />

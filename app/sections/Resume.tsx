@@ -4,12 +4,13 @@ import { motion, AnimatePresence } from "motion/react";
 import { Briefcase, GraduationCap, Code2, User2 } from "lucide-react";
 import { Certificates } from "../components/Certificates";
 import { cn } from "../lib/utils";
-import { tabs, experienceData, educationData, skillsData } from "../data/data";
+import { tabs, experienceData, educationData, skillsData, LeftItemVariants } from "../data/data";
 
 export function Resume() {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
+    // Judul My hire me
     <section className="py-20 md:py-32" id="resume">
       <div className="text-center mb-16">
         <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">
@@ -21,9 +22,10 @@ export function Resume() {
         <div className="w-12 h-1 bg-foreground mx-auto mt-6" />
       </div>
 
+      {/* table content resume */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 text-left">
         {/* Sidebar Nav */}
-        <div className="w-full md:w-64 flex flex-col gap-2 shrink-0">
+        <motion.div variants={LeftItemVariants} className="w-full md:w-64 flex flex-col gap-2 shrink-0">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -39,9 +41,9 @@ export function Resume() {
               {tab.label}
             </button>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Content Area */}
+        {/* Experience Area */}
         <div className="flex-1 border-l-2 border-border/50 pl-0 md:pl-10 relative mt-4 md:mt-0 min-h-[400px]">
           <AnimatePresence mode="wait">
             {activeTab === "experience" && (
@@ -54,7 +56,9 @@ export function Resume() {
               >
                 {experienceData.map((item, i) => (
                   <div key={i} className="relative text-foreground border border-border hover:border-foreground hover:shadow-xl rounded-xl p-6 transition-shadow">
+                    {/* Dot Circle */}
                     <div className="absolute top-1/2 -left-10 -translate-x-[calc(50%+1px)] -translate-y-1/2 w-4 h-4 rounded-full bg-foreground hidden md:block" />
+                    {/* Container Content */}
                     <div className="flex flex-col md:flex-row gap-2 md:items-center justify-between mb-4">
                       <h4 className="text-xl font-bold">{item.role}</h4>
                       <span className="inline-block px-3 py-1 bg-muted rounded-full text-xs font-medium text-muted-foreground whitespace-nowrap">
@@ -68,6 +72,7 @@ export function Resume() {
               </motion.div>
             )}
 
+            {/* Education Area */}
             {activeTab === "education" && (
               <motion.div
                 key="education"
@@ -93,6 +98,7 @@ export function Resume() {
               </motion.div>
             )}
 
+            {/* Skills Area */}
             {activeTab === "skills" && (
               <motion.div
                 key="skills"
@@ -120,6 +126,7 @@ export function Resume() {
               </motion.div>
             )}
 
+            {/* About Area */}
             {activeTab === "about" && (
               <motion.div
                 key="about"
