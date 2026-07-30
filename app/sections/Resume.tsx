@@ -11,7 +11,7 @@ export function Resume() {
 
   return (
     // Judul My hire me
-    <section className="py-20 md:py-32" id="resume">
+    <section className="py-20 md:py-32 px-6" id="resume">
       <div className="text-center mb-16">
         <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">
           My Journey

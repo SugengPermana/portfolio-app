@@ -49,7 +49,7 @@ export function Work() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col md:flex-row gap-8 lg:gap-16">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 flex flex-col md:flex-row gap-6 lg:gap-8">
         {/* Left Column (List) */}
         <div className="flex-1 flex flex-col gap-4 min-w-0">
           {filteredWork.map((work, index) => {
@@ -149,7 +149,7 @@ export function Work() {
               </div>
 
               {/* Image Container */}
-              <div className="aspect-4/3 w-full overflow-hidden px-2">
+              <div className="aspect-16/9 w-full overflow-hidden px-1">
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={activeProject?.num}
@@ -159,7 +159,7 @@ export function Work() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="w-full h-full object-cover rounded-xl border border-border shadow-inner"
+                    className="w-full h-full object-cover border border-border shadow-inner"
                   />
                 </AnimatePresence>
               </div>

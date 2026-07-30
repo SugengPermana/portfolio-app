@@ -8,13 +8,15 @@ const services = [
     id: "web-dev",
     num: "01",
     title: "Web Development",
-    description: "Building fast, scalable, and responsive web applications using modern frameworks like React, Next.js, and Node.js with clean, maintainable code."
+    description: "I Build fast, scalable, and responsive web applications using modern frameworks like React, Next.js, and Laravel with clean, maintainable code.",
+    hasDetails: true
   },
   {
-    id: "ui-ux",
+    id: "cloud-engineer",
     num: "02",
-    title: "UI/UX Design",
-    description: "Designing intuitive user interfaces and seamless user experiences — from wireframes and prototypes to pixel-perfect, accessible final products."
+    title: "Cloud Engineer",
+    description: "I Building secure, reliable, and automated cloud infrastructure across AWS and Google Cloud environments.",
+    hasDetails: false
   }
 ];
 
@@ -32,14 +34,14 @@ export function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-        {services.map((service, i) => (
-          <Link key={i} href={`/services/${service.id}`}>
+        {services.map((service, i) => {
+          const Card = (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative text-foreground border border-border hover:border-foreground hover:shadow-lg rounded-3xl p-10 flex flex-col justify-between transition-shadow overflow-hidden h-full cursor-pointer bg-card hover:bg-muted/10"
+              className={`group relative text-foreground border border-border hover:border-foreground hover:shadow-lg rounded-3xl p-10 flex flex-col justify-between transition-shadow overflow-hidden h-full bg-card hover:bg-muted/10 ${service.hasDetails ? 'cursor-pointer' : ''}`}
             >
               <div>
                 <span
@@ -50,18 +52,27 @@ export function Services() {
                 </span>
                 <div className="h-px w-full bg-border mb-8" />
                 <h4 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{service.title}</h4>
-                <p className="text-muted-foreground font-light leading-relaxed mb-12">
-                  {service.description}
-                </p>
+                {service.description && (
+                  <p className="text-muted-foreground font-light leading-relaxed mb-12">
+                    {service.description}
+                  </p>
+                )}
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-end mt-auto">
                 <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-colors">
                   <ArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
                 </div>
               </div>
             </motion.div>
-          </Link>
-        ))}
+          );
+
+          // We return Card wrapped in a standard div instead of Link to remove navigation
+          return (
+            <div key={i} className="h-full">
+              {Card}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

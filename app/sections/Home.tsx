@@ -1,6 +1,7 @@
 "use client";
 import { ArrowRight, Download, Disc3 } from "lucide-react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaGoogle } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
 import { motion } from "motion/react";
 import { TechStack } from "../components/TechStack";
 import { AnimatedRole } from "../components/AnimatedRole";
@@ -93,6 +94,15 @@ export default function Home() {
               >
                 <FaInstagram className="w-5 h-5" />
               </a>
+              <a
+                href="https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965"
+                target="_blank"
+                rel="noopener"
+                aria-label="Google Cloud Sugeng Permana Desembry"
+                className="w-12 h-12 rounded-full bg-transparent border border-border text-foreground hover:border-foreground flex items-center justify-center transition-colors"
+              >
+                <SiGooglecloud className="w-5 h-5" />
+              </a>
             </motion.div>
 
             <motion.div
@@ -113,9 +123,9 @@ export default function Home() {
               </a>
               <a
                 href="/services/web-dev"
-                className="inline-flex items-center gap-2 border border-border bg-transparent text-foreground px-6 py-3.5 rounded-full hover:border-foreground transition-colors font-medium text-sm"
+                className="inline-flex items-center gap-2 border border-border bg-transparent text-foreground px-6 py-3.5 rounded-full hover:border-foreground hover:bg-foreground hover:text-background transition-colors font-medium text-sm"
               >
-                Lihat Paket & Harga <ArrowRight className="w-4 h-4" />
+                My Service <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
           </motion.div>
@@ -131,10 +141,10 @@ export default function Home() {
               <div className="absolute -inset-4 md:-inset-6 flex items-center justify-center pointer-events-none">
                 <div className="w-full h-full rounded-full border border-dashed border-border animate-[spin_20s_linear_infinite] relative">
                   {/* Dots on the orbit */}
-                  
+
                   {/* Top Left */}
                   <div className="absolute top-[10%] left-[10%] w-3 h-3 md:w-4 md:h-4 bg-foreground rounded-full shadow-sm" />
-                  {/* Bottom Right */}  
+                  {/* Bottom Right */}
                   <div className="absolute bottom-[10%] right-[10%] w-3 h-3 md:w-4 md:h-4 bg-foreground rounded-full shadow-sm" />
                   {/* Top Right */}
                   <div className="absolute top-[10%] right-[10%] w-3 h-3 md:w-4 md:h-4 bg-foreground rounded-full shadow-sm" />
@@ -160,7 +170,7 @@ export default function Home() {
 
       {/* Stats Section */}
       <motion.section variants={containerVariants} initial="hidden" animate="visible" className="py-12 border-t border-border">
-        <motion.div variants={itemVariants}  className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-transparent md:divide-border text-center">
+        <motion.div variants={itemVariants} className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-transparent md:divide-border text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2">
             <span className="text-4xl md:text-5xl font-bold">11</span>
             <span className="text-sm text-muted-foreground text-left leading-tight hidden md:block">

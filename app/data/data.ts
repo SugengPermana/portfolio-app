@@ -1,10 +1,5 @@
 // on
-import {
-  Briefcase,
-  GraduationCap,
-  Code2,
-  User2,
-} from "lucide-react";
+import { Briefcase, GraduationCap, Code2, User2 } from "lucide-react";
 // Icon (on)
 import { ReactIcon } from "../components/icons";
 import { NextJsIcon } from "../components/icons/nextjs";
@@ -21,6 +16,8 @@ import { dockerIcon } from "../components/icons/docker";
 import { VscodeIcon } from "../components/icons/vscode";
 import { GitIcon } from "../components/icons/git";
 import { GravityIcon } from "../components/icons/antigravity";
+import { GoogleCloudIcon } from "../components/icons/googlecloud";
+import { awsIcon } from "../components/icons/aws";
 
 // Categori (on)
 export const categories = ["All", "Web App", "Design", "System Dashboard"];
@@ -36,10 +33,21 @@ export const workData = [
     tech: ["Tailwind", "NextJs", "Typescript", "Express", "Neon DB"],
     githubUrl: "https://github.com/SugengPermana/Bedakin",
     liveUrl: "https://bedakin.vercel.app/",
-    imageUrl: "/bedakin.webp", // placeholder
+    imageUrl: "/Bedakin.webp", // placeholder
   },
   {
     num: "02",
+    title: "MUA",
+    categories: ["Web App"],
+    description:
+      "MUA adalah website landing page yang di buat untuk jasa Make Up Artist yang langsung bisa konsultasi dan booking by whatsapp. Desain ini berfokus pada tampilan yang clean dan modern dan simple agar orang bisa gampang meggunakan dan memahami jasa apa yang ditawarkan.",
+    tech: ["Next js", "Tailwind", "Typescript"],
+    githubUrl: "https://github.com/SugengPermana/MUA",
+    liveUrl: "https://nuryantimua.vercel.app/",
+    imageUrl: "/MUA.webp",
+  },
+  {
+    num: "03",
     title: "Belanja",
     categories: ["Web App"],
     description:
@@ -47,18 +55,7 @@ export const workData = [
     tech: ["HTML", "CSS", "Javascript"],
     githubUrl: "https://github.com/SugengPermana/Belanja.com",
     liveUrl: "https://sugengpermana.github.io/Belanja.com/",
-    imageUrl: "/belanja_com.webp",
-  },
-  {
-    num: "03",
-    title: "Villa Plus",
-    categories: ["Web App"],
-    description:
-      "villaPlus adalah website villa pihak ketiga yang memungkinkan pengguna untuk menjelajahi website. villa ini punya pilihan dengan informasi detail untuk membantu pengguna menemukan akomodasi yang sesuai dengan kebutuhan dan preferensi mereka. Website ini dirancang dengan tampilan yang bersih, modern, dan mudah digunakan untuk memastikan pengalaman browsing yang nyaman.",
-    tech: ["Tailwind", "NextJs", "Typescript"],
-    githubUrl: "https://github.com/SugengPermana/villa-plus",
-    liveUrl: "https://villa-plus.vercel.app/",
-    imageUrl: "/villa_plus.webp",
+    imageUrl: "/belanja.webp",
   },
   {
     num: "04",
@@ -69,43 +66,32 @@ export const workData = [
     tech: ["HTML", "CSS", "Javascript", "Node.js"],
     githubUrl: "#",
     liveUrl: "https://task-manajemen.vercel.app/",
-    imageUrl: "/Task_manajemen.webp",
+    imageUrl: "/manajemen.webp",
   },
   {
     num: "05",
-    title: "MUA",
-    categories: ["Web App"],
-    description:
-      "MUA adalah website landing page yang di buat untuk jasa Make Up Artist yang langsung bisa konsultasi dan booking by whatsapp. Desain ini berfokus pada tampilan yang clean dan modern dan simple agar orang bisa gampang meggunakan dan memahami jasa apa yang ditawarkan.",
-    tech: ["Next js", "Tailwind", "Typescript"],
-    githubUrl: "\https://github.com/SugengPermana/MUA",
-    liveUrl: "https://mua-iota.vercel.app/",
-    imageUrl: "/MUA.webp",
-  },
-  {
-    num: "06",
-    title: "Portfolio-v1",
+    title: "Portfolio Versi 1",
     categories: ["Web App"],
     description:
       "Portofolio ini adalah portfolio pribadi versi lama saya. yang di buat tahun 2025",
     tech: ["React", "Tailwind", "Vite", "Javascript"],
     githubUrl: "https://github.com/SugengPermana/Portofolio_SugengPermana",
     liveUrl: "https://sugengpermana.vercel.app/",
-    imageUrl: "/portfolio-1.webp",
+    imageUrl: "/portfolio-v1.webp",
   },
   {
-    num: "07",
-    title: "Portfolio-v2",
+    num: "06",
+    title: "Portfolio Versi 2",
     categories: ["Web App"],
     description:
-      "Portofolio ini adalah portfolio yang di gunakan oleh saya saat ini. yang di buat tahun 2026.",
+      "Portofolio ini adalah portfolio yang di gunakan sebelum portfolio ini di buat",
     tech: ["Next js", "Tailwind", "Typescript"],
     githubUrl: "https://github.com/SugengPermana/portfolio",
     liveUrl: "https://sugengpermanaid.vercel.app/",
     imageUrl: "/portfolio-v2.webp",
   },
   {
-    num: "08",
+    num: "07",
     title: "Sepatu Sneakers",
     categories: ["Design"],
     description:
@@ -116,7 +102,7 @@ export const workData = [
     imageUrl: "/shoes.webp",
   },
   {
-    num: "09",
+    num: "08",
     title: "Fruit Cashier Dashboard UI Design",
     categories: ["Design"],
     description:
@@ -127,7 +113,7 @@ export const workData = [
     imageUrl: "/Sayur.webp",
   },
   {
-    num: "10",
+    num: "09",
     title: "Warung Madura Dashboard UI Design",
     categories: ["Design"],
     description:
@@ -198,60 +184,11 @@ export const certificatesData = [
     link: "https://www.dicoding.com/certificates/QLZ935J07Z5D",
   },
   {
-    title: "Engineer AI Agents with Agent Development Kit (ADK)",
-    issuer: "Google Skill Boost",
-    year: "2026",
-    credentialId: "25502783",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25502783",
-  },
-  {
-    title: "Create ML Models With BigQuery ML",
-    issuer: "Google Skill Boost",
-    year: "2026",
-    credentialId: "25611508",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25611508",
-  },
-  {
     title: "Google Skills Arcade '26: Facilitator Guidelines",
     issuer: "Google Skill Boost",
     year: "2026",
     credentialId: "25502771",
     link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/25502771",
-  },
-  {
-    title: "Machine Learning Operations (MLOps) For Generative AI",
-    issuer: "Google Skill Boost",
-    year: "2025",
-    credentialId: "19846128",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/19846128",
-  },
-  {
-    title: "Introduction to Security Principles in Cloud Computing",
-    issuer: "Google Skill Boost",
-    year: "2025",
-    credentialId: "18212641",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/18212641",
-  },
-  {
-    title: "Get Started with Google Workspace Tools",
-    issuer: "Google Skill Boost",
-    year: "2025",
-    credentialId: "17981862",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/17981862",
-  },
-  {
-    title: "Gemini For Application Developers",
-    issuer: "Google Skill Boost",
-    year: "2025",
-    credentialId: "17980465",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/17980465",
-  },
-  {
-    title: "Introduction to Generative AI",
-    issuer: "Google Skill Boost",
-    year: "2025",
-    credentialId: "17102920",
-    link: "https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965/badges/17102920",
   },
   {
     title: "Introduction to Cybersecurity",
@@ -308,11 +245,11 @@ export const educationData = [
 export const skillsData = [
   { name: "Backend Development", progress: 80 },
   { name: "Frontend Development", progress: 95 },
-  { name: "AI / Machine Learning", progress: 40 },
+  { name: "AI / Machine Learning", progress: 50 },
   { name: "Software Development", progress: 60 },
   { name: "Python", progress: 40 },
-  { name: "Hardware Maintenance", progress: 40 },
-  { name: "Prompt Engineering", progress: 85 },
+  { name: "Hardware Maintenance", progress: 30 },
+  { name: "Prompt Engineering", progress: 80 },
 ];
 
 // Tech Stack (on)
@@ -354,6 +291,13 @@ export const stack = [
       { name: "Docker", icon: dockerIcon, color: "text-blue-500" },
       { name: "VS Code", icon: VscodeIcon, color: "text-blue-500" },
       { name: "AntiGravity", icon: GravityIcon, color: "text-purple-500" },
+    ],
+  },
+  {
+    title: "CLOUD & DEPLOYMENT",
+    items: [
+      { name: "Google Cloud", icon: GoogleCloudIcon, color: "text-orange-500" },
+      { name: "AWS", icon: awsIcon, color: "text-orange-500" },
     ],
   },
 ];
@@ -402,5 +346,5 @@ export const RightItemVariants = {
     transition: {
       duration: 0.6,
     },
-  }
-}
+  },
+};

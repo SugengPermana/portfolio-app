@@ -1,4 +1,5 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -38,6 +39,11 @@ export function Footer() {
             <li>
               <a href="https://www.instagram.com/sgprmna_?igsh=MXBzMXEyc3E1cGRoYg==" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
                 <FaInstagram className="w-4 h-4" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.skills.google/public_profiles/83950568-42ba-48b6-bfdb-e53cc3af5965" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-foreground hover:text-background transition-colors">
+                <SiGooglecloud className="w-4 h-4" />
               </a>
             </li>
           </ul>
