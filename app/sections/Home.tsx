@@ -172,14 +172,14 @@ export default function Home() {
       <motion.section variants={containerVariants} initial="hidden" animate="visible" className="py-12 border-t border-border">
         <motion.div variants={itemVariants} className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-transparent md:divide-border text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2">
-            <span className="text-4xl md:text-5xl font-bold">11</span>
+            <span className="text-4xl md:text-5xl font-bold">1+</span>
             <span className="text-sm text-muted-foreground text-left leading-tight hidden md:block">
               Years
               <br />
               Experience
             </span>
             <span className="text-sm text-muted-foreground md:hidden">
-              Month Experience
+              Years Experience
             </span>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 border-l border-border md:border-none">
@@ -224,45 +224,34 @@ export default function Home() {
           </div>
           <div className="md:col-span-8">
             <h3 className="text-2xl md:text-2xl leading-snug font-light text-balance">
-              Halo! Gue Sugeng, seorang Frontend sekaligus Backend Developer
-              yang tinggal di Bogor. Sejak masuk kuliah, gue mulai tertarik sama
-              dunia Tech. Dulu gue berasal dari jurusan pariwisata, bahkan
-              sempat nggak ngerti apa itu coding dan sebenarnya coding itu
-              dipakai buat apa, dan ngapain?. Karena rasa penasaran, gue mulai
-              coba bikin website sederhana dan ikut beberapa webinar serta
-              bootcamp tentang tech. Dari situ gue sadar kalau dunia Tech
-              ternyata menarik banget. Gue jadi makin suka ngulik dan belajar
-              gimana sebuah aplikasi atau website bisa dibuat dari nol sampai
-              akhirnya dipakai banyak orang. Selain itu, sekarang AI lagi
-              berkembang pesat dan muncul istilah “vibe coding”. Karena
-              penasaran, gue juga mulai belajar gimana cara memanfaatkan AI buat
-              membantu proses development project gue. Dari situ gue jadi
-              tertarik memahami AI lebih dalam, mulai dari cara kerjanya sampai
-              gimana bikin prompt yang efektif supaya hasilnya maksimal.
+              Halo! Saya Sugeng, seorang Frontend sekaligus Backend Developer yang tinggal di Bogor.
+
+              Sejak mulai kuliah, saya tertarik dengan dunia teknologi. Sebelumnya, saya berasal dari jurusan pariwisata dan saya benar benar zero knowledge tentang teknologi. Bahkan saya tidak mengerti apa itu coding, bagaimana cara kerjanya.
+
+              Karena saya penasaran, saya mulai coba membuat website sederhana dan belajar secara mandiri melalui berbagai project. Dari sana, saya menyadari bahwa dunia teknologi ternyata sangat menarik. Saya semakin suka mengeksplorasi bagaimana sebuah aplikasi atau website dapat dibangun dari nol hingga akhirnya dapat digunakan dan memberikan manfaat bagi penggunanya.
+
+              Selain itu saya juga mulai tertarik dengan AI dan bagaimana AI dapat dimanfaatkan dalam proses development. Rasa penasaran tersebut mendorong saya untuk tidak hanya menggunakan AI sebagai tools, tetapi juga mulai memahami bagaimana AI bekerja, bagaimana menyusun prompt yang efektif, serta bagaimana mengintegrasikannya ke dalam workflow development agar proses belajar dan membangun project menjadi lebih efektif.
             </h3>
           </div>
         </div>
       </section>
 
-      {/* Goals Section */}
+      {/* What I Can Do? Section */}
       <section className="py-15 md:py-22">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
           <div className="md:col-span-4 relative">
             <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground md:sticky md:top-32">
-              Goals
+              What I Can Do?
             </h2>
           </div>
           <div className="md:col-span-8">
             <h3 className="text-2xl md:text-2xl leading-snug font-light text-balance">
-              Di waktu luang, gue suka banget explore dan eksperimen dengan
-              tools AI terbaru dan mengompare perbadingan AI mana yang paling
-              bagus, mulai dari Gemini, ChatGPT, Copilot, Claude dan lain
-              sebagainya. Goal gue untuk 5 tahun ke depan adalah menjadi seorang
-              tech professional yang fleksibel, mampu beradaptasi di berbagai
-              role, dan dapat berkontribusi dalam menciptakan produk digital
-              yang modern, relevan, dan benar-benar bermanfaat bagi banyak
-              orang. Kalau lo tertarik, punya ide seru dan pengen kolaborasi,
-              yuk ngobrol bareng gue!
+              Saya bisa membangun interface yang responsif hingga mengembangkan REST API, database, dan logic yang mendukung sebuah aplikasi. Saya juga memiliki pengalaman melakukan optimasi website hingga mencapai 100% Performance pada Lighthouse, sehingga website dapat berjalan lebih cepat, responsif, dan nyaman digunakan.
+
+              Dalam membangun project, saya tidak hanya fokus pada hasil akhir, tetapi juga berusaha memahami bagaimana setiap bagian aplikasi saling terhubung dan bekerja.
+              Ketika menemukan masalah, saya terbiasa mencari tahu penyebabnya terlebih dahulu melalui debugging, membaca error, dokumentasi, dan melakukan testing hingga website dapat berjalan dengan baik.
+
+              Seiring perjalanan belajar, saya mulai memperluas kemampuan ke Cloud Computing, DevOps, dan AI. Saya telah mencoba berbagai layanan cloud, mempelajari deployment, networking, monitoring, serta mengeksplorasi bagaimana AI dapat dimanfaatkan untuk membantu proses development.
             </h3>
             <div className="mt-8">
               <a

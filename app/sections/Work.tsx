@@ -144,7 +144,7 @@ export function Work() {
                   <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
                 <div className="mx-auto px-4 py-1.5 rounded-md bg-background border border-border text-xs text-muted-foreground font-mono truncate w-2/3 text-center opacity-70">
-                  https://github.com/sugengPermana/{activeProject?.title.replace(/\s+/g, '')}
+                  https://{activeProject?.liveUrl.replace('https://', '')}
                 </div>
               </div>
 

@@ -33,7 +33,7 @@ export const workData = [
     tech: ["Tailwind", "NextJs", "Typescript", "Express", "Neon DB"],
     githubUrl: "https://github.com/SugengPermana/Bedakin",
     liveUrl: "https://bedakin.vercel.app/",
-    imageUrl: "/Bedakin.webp", // placeholder
+    imageUrl: "/bedakin.webp", // placeholder
   },
   {
     num: "02",
@@ -55,7 +55,7 @@ export const workData = [
     tech: ["HTML", "CSS", "Javascript"],
     githubUrl: "https://github.com/SugengPermana/Belanja.com",
     liveUrl: "https://sugengpermana.github.io/Belanja.com/",
-    imageUrl: "/belanja.webp",
+    imageUrl: "/Belanja.webp",
   },
   {
     num: "04",
